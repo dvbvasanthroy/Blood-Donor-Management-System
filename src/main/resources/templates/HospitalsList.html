@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Hospitals and Blood Banks</title>
+    <link rel="stylesheet" href="hospitalsListPageStyles.css">
+</head>
+<body>
+
+<header>
+        <nav>
+            <ul>
+                <li><a href="homePage">Home</a></li>
+            	<li><a href="loginPage">Login</a>
+                <li><a href="registrationPage">Register</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hospital-list-section">
+        <h1>List of Hospitals and Blood Banks</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name of the Hospital</th>
+                    <th>Area</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>PinCode</th>
+                    <th>Contact Number</th>
+                    <th>Email Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="hospital:${hospitaldetails}">
+                    <td th:text="${hospital.hospitalname}">Hospital Name</td>
+                    <td th:text="${hospital.area}">Area</td>
+                    <td th:text="${hospital.city}">City</td>
+                    <td th:text="${hospital.state}">State</td>
+                    <td th:text="${hospital.pincode}">PinCode</td>
+                    <td th:text="${hospital.mobilenumber}">Contact Number</td>
+                    <td th:text="${hospital.emailid}">Email Id</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+    background-color: #b91d1d;
+    color: white;
+    padding: 15px;
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section Styles */
+.banner {
+    text-align: center;
+/*     background-color: #b91d1d; */
+    color: white;
+    padding: 85px 20px;
+    background-image: url('https://www.asmiglobalsoftwares.com/assets/img/bloodbank.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.banner h1 {
+	color: red;
+    font-size: 42px;
+    margin: 0;
+}
+
+.banner h2 {
+	color: black;
+    font-size: 36px;
+    margin: 10px 0;
+    padding-left: 200px;
+}
+
+/* Actions Section Styles */
+.actions {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.actions a {
+    background-color: #d82323;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #b91d1d;
+}
+
+/* Info Section Styles */
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.info .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info .card:hover {
+    transform: translateY(-10px);
+}
+
+.info .card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.info .card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.info .card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #b91d1d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info .card a:hover {
+    color: #d82323;
+}
+
+.info .card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info .card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info .card ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* Footer Styles */
+footer {
+    background-color: #b91d1d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

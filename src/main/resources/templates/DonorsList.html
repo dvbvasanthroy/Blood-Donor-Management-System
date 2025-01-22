@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor List</title>
+    <link rel="stylesheet" href="donorsListPageStyles.css">
+</head>
+<body>
+
+    <section class="donor-list-section">
+        <h1>List of Donors</h1>
+        <table class="donor-table">
+            <thead>
+                <tr>
+                    <th>Donor ID</th>
+                    <th>Name of the Donor</th>
+                    <th>Gender</th>
+                    <th>Blood Group</th>
+                    <th>Health Condition</th>
+                    <th>Mobile Number</th>
+                    <th>Email ID</th>
+                    <th>Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="donor:${donordetails}">
+                    <td th:text="${donor.id}"></td>
+                    <td th:text="${donor.firstname}"></td>
+                    <td th:text="${donor.gender}"></td>
+                    <td th:text="${donor.bloodgroup}"></td>
+                    <td th:text="${donor.healthcondition}"></td>
+                    <td th:text="${donor.mobilenumber}"></td>
+                    <td th:text="${donor.emailid}"></td>
+                    <td th:text="${donor.area}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

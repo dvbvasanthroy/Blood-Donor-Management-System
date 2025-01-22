@@ -1,0 +1,58 @@
+
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            	<li><a href="/loginPage">Login</a>
+                <li><a href="/registrationPage">Register</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration-section">
+        <h1>Hospital Registration</h1>
+        <form action="hospitalRegistration" method="post">
+            <div class="input-group">
+                <label for="hospitalname">Hospital Name:</label>
+                <input type="text" id="hospitalname" name="hospitalname" placeholder="Enter your hospital name" required>
+            </div>
+            <div class="input-group">
+                <label for="mobilenumber">Mobile Number:</label>
+                <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Enter your hospital mobile number" required>
+            </div>
+            <div class="input-group">
+                <label for="emailid">Email ID:</label>
+                <input type="email" id="emailid" name="emailid" placeholder="Enter your hospital email ID" required>
+            </div>
+            <div class="input-group">
+                <label for="area">Area:</label>
+                <input type="text" id="area" name="area" placeholder="Enter your hospital area" required>
+            </div>
+            <div class="input-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your hospital city" required>
+            </div>
+            <div class="input-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your hospital state" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

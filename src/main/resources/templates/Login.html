@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginPageStyles.css">
+</head>
+<body>
+
+<header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            	<li><a href="/loginPage">Login</a>
+                <li><a href="/registrationPage">Register</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <form action="login">
+            <h1>Login</h1>
+            <label for="emailid">Email Id</label>
+            <input id="emailid" type="email" name="emailId" placeholder="Enter your email id" required="required">
+            
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="Enter your password" required="required">
+            
+            <p><a href="#">Forgot Password?</a></p>
+            
+            <input id="loginbutton" type="submit" value="Login">
+            
+            <p>Don't have an account? <a href="registrationPage">Register Now</a></p>
+        </form>
+        <h3 th:text="${exceptionmsg}"></h3>
+    </div>
+</body>
+</html>
